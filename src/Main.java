@@ -2,8 +2,8 @@
 public class Main {
     public static void main(String[] orgs) {
         System.out.println("Bienvenidos a la inmersión en Java");
-        System.out.println("pelicula Matrix");
-
+        //System.out.println("pelicula Matrix");
+        //declaración de variables
         int fechaDeLanzamiento = 1999;
         double evaluacion = 4.5;
         boolean incluidoEnElPlanBasico = true;
