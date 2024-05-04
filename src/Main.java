@@ -28,11 +28,18 @@ public class Main {
             System.out.println("Pelicula retro que vale la pena");
         }
 
-        for (int i = 0; i < 3; i++) {
+        int i = 0;
+        while (i < 3) {
             Scanner teclado = new Scanner(System.in);
-            System.out.println("ingresa la puntuacion sobre Matrix");
-            double notaMatrix = teclado.nextDouble();
-            mediaEvalucionesUsuario = mediaEvalucionesUsuario + notaMatrix;
+            System.out.println("Ingresa la puntuación sobre Matrix:");
+            try {
+                double notaMatrix = teclado.nextDouble();
+                mediaEvalucionesUsuario += notaMatrix;
+                i++;
+            } catch (Exception e) {
+                System.out.println("Error: Ingresa un valor numérico válido.");
+                teclado.nextLine(); // Limpiar el buffer del Scanner
+            }
         }
         System.out.println("La media de la pelicula Matrix es: " + mediaEvalucionesUsuario / 3);
 
