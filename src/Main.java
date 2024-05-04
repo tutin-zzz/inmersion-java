@@ -14,7 +14,6 @@ public class Main {
                 """;
         double mediaEvalucionesUsuario = 0;
 
-
         System.out.println("pelicula: " + nombre);
         System.out.println(fechaDeLanzamiento);
         System.out.println(evaluacion);
@@ -23,7 +22,7 @@ public class Main {
         double mediaEvaluacion = (4.5 + 4.8 + 3) / 3;
         System.out.println("Media de la evaluacion de Matrix: " + mediaEvaluacion);
 
-        if (fechaDeLanzamiento > 2023){
+        if (fechaDeLanzamiento >= 2023){
             System.out.println("Pelicula popular del momento");
         } else {
             System.out.println("Pelicula retro que vale la pena");
@@ -35,7 +34,7 @@ public class Main {
             double notaMatrix = teclado.nextDouble();
             mediaEvalucionesUsuario = mediaEvalucionesUsuario + notaMatrix;
         }
-        System.out.println("La media de la pelicula Matrix es: " + mediaEvaluacion / 3);
+        System.out.println("La media de la pelicula Matrix es: " + mediaEvalucionesUsuario / 3);
 
     }
 }
